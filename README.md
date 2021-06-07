@@ -7,6 +7,12 @@
 - Si no sabe donde está conectado el Arduino usar ls /dev/tty*
 - Flash es para cargar en el Arduino, si no tiene uno conectado, debe comentar esa instrucción
 
+# Ejecutar las siguientes actualizaciones en Raspbian
+- sudo apt-get update
+- sudo apt-get upgrade
+- sudo apt-get install avr-libc gcc-avr avrdude
+- sudo apt-get install build-essential
+
 # CLONE
 - git status
 - git clone https://github.com/SistemasEmbebidos2020/Practica4.git
