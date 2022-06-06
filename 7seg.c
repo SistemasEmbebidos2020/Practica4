@@ -2,7 +2,7 @@
 #include <util/delay.h>
 
 
-uint16_t demora = 1000; 
+const int demora = 1000; 
 char num[10] = {0B1000000,0B111001,0B0100100,0B0110000,0B0011001,0B0010010,0B0000011,0B1111000,0B0000000,0B0011000};
 int g = PB6;
 int main()
