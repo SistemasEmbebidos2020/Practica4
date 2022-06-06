@@ -6,10 +6,10 @@ CPPFLAGS=-DF_CPU=$(F_CPU)
 OBJCOPY=avr-objcopy
 CMD_FLASH=avrdude
 MCU1 = ATMEGA328P
-DEVPORT = /dev/ttyUSB0 #puede que USB0 le salga error y debera cambiar a ACM0, o el numero de puerto asignado a su ATmega.
+DEVPORT = /dev/ttyACM0 #puede que USB0 le salga error y debera cambiar a ACM0, o el numero de puerto asignado a su ATmega.
 BAUDRATE=115200
 .PHONY: default
-default : EXE_FILE HEX_FILE #flash
+default : EXE_FILE HEX_FILE flash
 EXE_FILE: $(FNAME).c
 	$(CC) $(CFLAGS) $(CPPFLAGS) $< -o $(FNAME)
 HEX_FILE: $(FNAME)
