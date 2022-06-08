@@ -12,7 +12,21 @@
 - sudo apt-get upgrade
 - sudo apt-get install avr-libc gcc-avr avrdude
 - sudo apt-get install build-essential
+- sudo apt-get install git
 
 # CLONE
 - git status
 - git clone https://github.com/SistemasEmbebidos2020/Practica4.git
+
+
+Practica:
+sudo git clone https://github.com/SistemasEmbebidos2020/Practica4
+acceder a la carpeta : cd Practica4
+acceder al archivo: sudo nano dcmotor.c 
+para salir del editor: ctrl x
+para ver en que puerto se encuentra conectado nuestro atmega: sudo ls /dev/tty*
+para ver la configuración de nuestra comunicación:
+sudo nano makefile
+salir: ctrl x
+para programar nuestro sistema embebidos:
+sudo make FNAME=dcmotor
