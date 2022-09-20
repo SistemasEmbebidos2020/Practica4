@@ -4,7 +4,7 @@
 
 int main()
  { 
-	DDRB = 0b111;
+	DDRB = 0b11;
    while (1)
 	{
 		PORTB = (1<<PB1) & ~(1<<PB2);
