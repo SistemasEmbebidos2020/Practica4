@@ -2,7 +2,7 @@
 #include <util/delay.h> 
 
 int main()
- { 	//se declara como salidas al PB1 y PB2, pin 9 y 10 del arduino
+ { 	//se declara como salidas al PB0, PB1 y PB2, pin 8, 9 y 10 del arduino
 	DDRB = 0b111;
 	PORTB = 0b101;
    while (1)
@@ -22,9 +22,9 @@ void izq(){
 }
 
 int main()
- { 	//se declara como salidas al PB1 y PB2, pin 9 y 10 del arduino
-	DDRB = 0b111;
-  PORTB = 0b101;
+ { 	//se declara como salidas al PB0, PB1 y PB2, pin 8, 9 y 10 del arduino
+	DDRB = 0b111;	//se declara los 3 primeros bits del puerto B como salida
+  PORTB = 0b1;	//se activa inicialmente un pin para mostrar que el sistema empezó a trabajar
    while (1)
 	{
 		der();
