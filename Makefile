@@ -6,6 +6,7 @@ CPPFLAGS=-DF_CPU=$(F_CPU)
 OBJCOPY=avr-objcopy
 CMD_FLASH=avrdude
 MCU1 = ATMEGA328P
+#para comprobar el puerto al que esta conectar ejecutar el comando: ls /dev/tty*
 DEVPORT = /dev/ttyACM0 #puede que USB0 le salga error y debera cambiar a ACM0, o el numero de puerto asignado a su ATmega.
 BAUDRATE=115200
 .PHONY: default
